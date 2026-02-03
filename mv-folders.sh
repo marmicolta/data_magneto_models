@@ -7,6 +7,7 @@ set -e
 
 echo "Starting file operations..."
 
+echo "Creating directories..."
 # Create folder for lineshistory
 mkdir -p ./h23
 mkdir -p ./h24
@@ -19,6 +20,7 @@ mkdir -p ./h36
 mkdir -p ./h37
 mkdir -p ./h47
 
+echo "Moving hydrogen lines"
 #now move the files into the folders
 mv ./prof*h23*.0 ./h23/
 mv ./prof*h24*.0 ./h24/
@@ -30,12 +32,13 @@ mv ./prof*h37*.0 ./h37/
 
 mv ./prof*h47*.0 ./h47/ 
 
+echo "Moving calcium lines"
 mv ./prof*ca15.Ca.*.0 ./ca15/
 mv ./prof*ca15.Ca_0p5.*I15*.0 ./ca15/
 mv ./prof*ca15.Ca_0p5.*.0 ./ca15/
 mv ./prof*ca15.Ca_0p1.*I15*.0 ./ca15/
 mv ./prof*ca15.Ca_0p1.*.0 ./ca15/
-mv ./prof*ca15.Ca_0p01.I15*.0 ./ca15/
+mv ./prof*ca15.Ca_0p01.*I15*.0 ./ca15/
 mv ./prof*ca15.Ca_0p01.*.0 ./ca15/
 
 mv ./prof*ca25.Ca.*.0 ./ca25/
@@ -43,7 +46,7 @@ mv ./prof*ca25.Ca_0p5.*I15*.0 ./ca25/
 mv ./prof*ca25.Ca_0p5.*.0 ./ca25/
 mv ./prof*ca25.Ca_0p1.*I15*.0 ./ca25/
 mv ./prof*ca25.Ca_0p1.*.0 ./ca25/
-mv ./prof*ca25.Ca_0p01.I15*.0 ./ca25/
+mv ./prof*ca25.Ca_0p01.*I15*.0 ./ca25/
 mv ./prof*ca25.Ca_0p01.*.0 ./ca25/
 
 mv ./prof*ca35.Ca.*.0 ./ca35/
@@ -51,11 +54,11 @@ mv ./prof*ca35.Ca_0p5.*I15*.0 ./ca35/
 mv ./prof*ca35.Ca_0p5.*.0 ./ca35/
 mv ./prof*ca35.Ca_0p1.*I15*.0 ./ca35/
 mv ./prof*ca35.Ca_0p1.*.0 ./ca35/
-mv ./prof*ca35.Ca_0p01.I15*.0 ./ca35/
+mv ./prof*ca35.Ca_0p01.*I15*.0 ./ca35/
 mv ./prof*ca35.Ca_0p01.*.0 ./ca35/
 
+echo "Archiving other files..."
 #tar other files and then remove them
-
 tar -czf ca24-G01-G06.tar.gz ./prof*ca24*.0 
 rm ./prof*ca24*.0 
 tar -czf ca14-G01-G06.tar.gz ./prof*ca14*.0 
