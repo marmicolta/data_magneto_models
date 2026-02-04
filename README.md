@@ -8,8 +8,8 @@ This repository contains the raw model data. For easy visualization of profiles,
 Each file name is as such:
 <code>prof.\<line>.\<geometry>.\<Mdot>.\<Tmax>.\<inclination>.0</code>
 
-- line: which line is modeled (Hα = h23, Hβ = h24, CaIIK = ca15)
-- geometry: the geometry of the disk, this is of the form GXX, where X is between 01-36. The geometries are parametrized as the inner radius of the magnetosphere and the width of the magnetosphere in units of R<sub>*</sub>.
+- line: which line is modeled (example: Hα = h23, Hβ = h24, CaIIK = ca15). All lines availble are: h23, h24, h25, h35, h36, h37, h47, ca15, ca25, ca35
+- geometry: the geometry of the disk, this is of the form GXX, where X is between 01-36. The geometries are parametrized by the inner radius and width of the magnetosphere, both in units of R<sub>*</sub>.
 - Mdot: the accretion rate (M<sub>$\odot$</sub>/yr), this is of the form MXX, where X is between 01-13.
 - Tmax: the maximum temperature of the flow (Kelvin), this is of the form TXX, where X is between 01-16,
 - Inclination: the inclination of the magnetosphere in degrees, this is of the form IXX, where X is any of [15, 30, 45, 60, 75].
@@ -22,4 +22,4 @@ which would query the Hα line with a geometry of R<sub>in</sub>=2, width=0.5, a
 
 Each file contains:
 Line profiles are in flux per unit frequency (erg/s/cm^2/Hz) and velocity (km/s). 
-Calculated at the surface of each star (see Stellar Parameter table), i.e., to convert to luminosity (per unit frequency) multiply by 4piR<sub>*,mod<sub>^2
+Calculated at the surface of each star (see Stellar Parameter table), i.e., to convert to luminosity (per unit frequency) multiply by 4πR<sub>*,mod<sub>^2
