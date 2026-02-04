@@ -5,21 +5,61 @@ Calculated by Thanawuth Thanathibodee and Marbely Micolta
 
 This repository contains the raw model data. For easy visualization of profiles, we are developing an interactive visualization tool (coming soon! Currently in beta version, contact us if needed). We do not recommend cloning the full repository; single files can be queried if the file name is known (see file name structure below).
 
-Each file name is as such:
-<code>prof.\<line>.\<geometry>.\<Mdot>.\<Tmax>.\<inclination>.0</code>
+## Lines available
 
-- line: which line is modeled (example: Hα = h23, Hβ = h24, CaIIK = ca15). All lines availble are: h23, h24, h25, h35, h36, h37, h47, ca15, ca25, ca35
-- geometry: the geometry of the disk, this is of the form GXX, where X is between 01-36. The geometries are parametrized by the inner radius and width of the magnetosphere, both in units of R<sub>*</sub>.
+Hydrogen lines:
+
+ Balmer series:   2-3 to 2-7\
+ Paschen series:  3-4 to 3-16\
+ Brackett series: 4-5 to 4-16
+
+Calcium II lines:
+
+ CaII H: 1-4\
+ CaII K: 1-5
+
+ Infrared triplet lines(IRT):
+ 
+ CaII 8498.02: 2-5\
+ CaII 8542.09: 3-5\
+ CaII 8662.14: 2-4
+
+## Parameters
+
+The file models/magnetomodels-ids.csv lists the correspondences between an ID number and the Magnetospheric parameters. Model stellar parameters are described in model_stellar_parameters
+
+- geometry: the geometry of the disk, this is of the form GXX, where X is between 01-36(*). The geometries are parametrized by the inner radius and width of the magnetosphere, both in units of R<sub>*</sub>.
 - Mdot: the accretion rate (M<sub>$\odot$</sub>/yr), this is of the form MXX, where X is between 01-13.
 - Tmax: the maximum temperature of the flow (Kelvin), this is of the form TXX, where X is between 01-16,
 - Inclination: the inclination of the magnetosphere in degrees, this is of the form IXX, where X is any of [15, 30, 45, 60, 75].
 
-The file models/magnetomodels-ids.csv lists the correspondences between an ID number
-and the model parameters. 
+- Ca abundances: All calcium lines have solar abundance. Lines Ca:15,25,35 have a grid in abundances from 1 to 0.01 solar abundances. Detailed ID of each abundance in ca_abundance.csv
 
-An example file name is <code>prof.h23.G01.M01.T03.I45.0</code>, 
-which would query the Hα line with a geometry of R<sub>in</sub>=2, width=0.5, an accretion rate of -7, max temperature of 9500K, and an inclination of 45 degrees.
+(*) Note about geometries: 
 
+ All the lines have the first 6 (basic) geometries. 
+ 
+ Lines: Ca: 15,25,35 and H: 2-3,2-4,2-5,3-5,3-6,3-7,4-7 have a more detailed grid in geometries (36). These profiles are available decompressed, ready to query. The remaining lines are available in tar.gz files.
+ 
+ The file line_geo_extension.csv lists the index of the maximum possible geometry for each line.
+
+
+## File name structure:
+
+Each file name is as such:
+
+- For hydrogen lines: 
+  
+  <code>prof.\<line>.\<geometry>.\<Mdot>.\<Tmax>.\<inclination>.0</code>
+  
+  An example file name is <code>prof.h23.G01.M01.T03.I45.0</code>, which would correspond to the Hα line with a geometry of R<sub>in</sub>=2, width=0.5, an accretion rate of -7, max temperature of 9500K, and an inclination of 45 degrees.
+
+- For calcium lines:
+
+  <code>prof.\<line>.<abundance>.\<geometry>.\<Mdot>.\<Tmax>.\<inclination>.0</code>
+    An example file name is <code>prof.ca15.Ca_0p5.G01.M01.T03.I45.0</code>, which would correspond to the Ca II K line with an abundance of 0.5 (50% Solar), geometry of R<sub>in</sub>=2, width=0.5, an accretion rate of -7, max temperature of 9500K, and an inclination of 45 degrees.
+
+## Units:
 Each file contains:
 Line profiles are in flux per unit frequency (erg/s/cm^2/Hz) and velocity (km/s). 
 Calculated at the surface of each star (see Stellar Parameter table), i.e., to convert to luminosity (per unit frequency) multiply by 4πR<sub>*,mod</sub>^2
