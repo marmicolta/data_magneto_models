@@ -22,4 +22,4 @@ which would query the Hα line with a geometry of R<sub>in</sub>=2, width=0.5, a
 
 Each file contains:
 Line profiles are in flux per unit frequency (erg/s/cm^2/Hz) and velocity (km/s). 
-Calculated at the surface of each star (see Stellar Parameter table), i.e., to convert to luminosity (per unit frequency) multiply by 4πR<sub>*,mod<sub>^2
+Calculated at the surface of each star (see Stellar Parameter table), i.e., to convert to luminosity (per unit frequency) multiply by 4πR<sub>*,mod</sub>^2
