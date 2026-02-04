@@ -1,7 +1,7 @@
 # Database of Magnetospheric Accretion Models for T Tauri Stars
 
-Magnetospheric accretion model references: Hartmann et al. 1994 and Muzerolle et al. 2001
-Calculated by Thanawuth Thanathibodee and Marbely Micolta
+Magnetospheric accretion model references: [Hartmann et al. (1994)](https://ui.adsabs.harvard.edu/abs/1994ApJ...426..669H/abstract) and [Muzerolle et al. (2001)](https://ui.adsabs.harvard.edu/abs/2001ApJ...550..944M/abstract)
+Calculated by [Thanawuth (Atom) Thanathibodee](https://www.frontier.phys.sc.chula.ac.th/thanawut-w) and [Marbely Micolta](https://sites.google.com/umich.edu/marbelymicolta?usp=sharing)
 
 This repository contains the raw model data. For easy visualization of profiles, we are developing an interactive visualization tool (coming soon! Currently in beta version, contact us if needed). We do not recommend cloning the full repository; single files can be queried if the file name is known (see file name structure below).
 
@@ -28,18 +28,18 @@ Calcium II lines:
 
 The file models/magnetomodels-ids.csv lists the correspondences between an ID number and the Magnetospheric parameters. Model stellar parameters are described in model_stellar_parameters
 
-- geometry: the geometry of the disk, this is of the form GXX, where X is between 01-36(*). The geometries are parametrized by the inner radius and width of the magnetosphere, both in units of R<sub>*</sub>.
+- geometry: the geometry of the disk, this is of the form GXX, where X is between 01-36(see note). The geometries are parametrized by the inner radius and width of the magnetosphere, both in units of R<sub>*</sub>.
 - Mdot: the accretion rate (M<sub>$\odot$</sub>/yr), this is of the form MXX, where X is between 01-13.
 - Tmax: the maximum temperature of the flow (Kelvin), this is of the form TXX, where X is between 01-16,
 - Inclination: the inclination of the magnetosphere in degrees, this is of the form IXX, where X is any of [15, 30, 45, 60, 75].
 
 - Ca abundances: All calcium lines have solar abundance. Lines Ca:15,25,35 have a grid in abundances from 1 to 0.01 solar abundances. Detailed ID of each abundance in ca_abundance.csv
 
-(*) Note about geometries: 
+Note about geometries: 
 
  All the lines have the first 6 (basic) geometries. 
  
- Lines: Ca: 15,25,35 and H: 2-3,2-4,2-5,3-5,3-6,3-7,4-7 have a more detailed grid in geometries (36). These profiles are available decompressed, ready to query. The remaining lines are available in tar.gz files.
+ Lines: Ca: 15,25,35 and H: 2-3,2-4,2-5,3-5,3-6,3-7,4-7 have a more detailed grid in geometries (36). The profiles of the extended geometry grid are available, ready to query. The remaining lines are available in tar.gz files.
  
  The file line_geo_extension.csv lists the index of the maximum possible geometry for each line.
 
@@ -63,3 +63,11 @@ Each file name is as such:
 Each file contains:
 Line profiles are in flux per unit frequency (erg/s/cm^2/Hz) and velocity (km/s). 
 Calculated at the surface of each star (see Stellar Parameter table), i.e., to convert to luminosity (per unit frequency) multiply by 4πR<sub>*,mod</sub>^2
+
+## Related papers:
+- [Micolta et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024ApJ...976..251M/abstract)
+- [Micolta et al. (2023)](https://ui.adsabs.harvard.edu/abs/2023ApJ...953..177M/abstract)
+- [Thanathibodee et al. (2023)](https://ui.adsabs.harvard.edu/abs/2023ApJ...944...90T/abstract)
+- [Thanathibodee et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020ApJ...892...81T/abstract)
+- [Thanathibodee et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019ApJ...884...86T/abstract)
+
