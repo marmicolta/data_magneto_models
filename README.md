@@ -72,3 +72,11 @@ Calculated at the surface of each star (see Stellar Parameter table), i.e., to c
 - [Thanathibodee et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020ApJ...892...81T/abstract)
 - [Thanathibodee et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019ApJ...884...86T/abstract)
 
+## License
+
+This repository contains data only.
+
+The dataset is licensed under the Creative Commons Attribution 4.0
+International License (CC BY 4.0). See `DATA_LICENSE.md` for details.
+
+
