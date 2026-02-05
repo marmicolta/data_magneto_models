@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+title: "Database of magnetospheric accretion models for T Tauri stars"
+message: "If you use this dataset, please cite it."
+type: dataset
+
+authors:
+  - family-names: Thanathibodee
+    given-names: Thanawuth
+    affiliation: University of Michigan
+    orcid: https://orcid.org/0000-0003-4507-1710
+
+  - family-names: Micolta
+    given-names: Marbely
+    affiliation: University of Michigan
+    orcid: https://orcid.org/0000-0001-8022-4378
+
+license: CC-BY-4.0
+
+repository-code: https://github.com/marmicolta/data_magneto_models
+
+keywords:
+  - magnetospheric accretion
+  - t tauri stars
+  - pre-main sequence stars
+  - astrophysics
