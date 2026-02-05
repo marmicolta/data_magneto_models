@@ -77,6 +77,6 @@ Calculated at the surface of each star (see Stellar Parameter table), i.e., to c
 This repository contains data only.
 
 The dataset is licensed under the Creative Commons Attribution 4.0
-International License (CC BY 4.0). See `DATA_LICENSE.md` for details.
+International License (CC BY 4.0). See `LICENSE.txt` for details.
 
 
