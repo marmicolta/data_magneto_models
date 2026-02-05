@@ -56,7 +56,7 @@ Each file name is as such:
 
 - For calcium lines:
 
-  <code>prof.\<line>.<abundance>.\<geometry>.\<Mdot>.\<Tmax>.\<inclination>.0</code>
+  <code>prof.\<line>.\<abundance>.\<geometry>.\<Mdot>.\<Tmax>.\<inclination>.0</code>
     An example file name is <code>prof.ca15.Ca_0p5.G01.M01.T03.I45.0</code>, which would correspond to the Ca II K line with an abundance of 0.5 (50% Solar), geometry of R<sub>in</sub>=2, width=0.5, an accretion rate of -7, max temperature of 9500K, and an inclination of 45 degrees.
 
 ## Units:
