@@ -3,7 +3,12 @@
 Magnetospheric accretion model references: [Hartmann et al. (1994)](https://ui.adsabs.harvard.edu/abs/1994ApJ...426..669H/abstract) and [Muzerolle et al. (2001)](https://ui.adsabs.harvard.edu/abs/2001ApJ...550..944M/abstract)
 Calculated by [Thanawuth (Atom) Thanathibodee](https://www.frontier.phys.sc.chula.ac.th/thanawut-w) and [Marbely Micolta](https://sites.google.com/umich.edu/marbelymicolta?usp=sharing)
 
-This repository contains the raw model data. For easy visualization of profiles, we are developing an interactive visualization tool (coming soon! Currently in development, contact us if needed). We do not recommend cloning the full repository; single files can be queried if the file name is known (see file name structure below).
+This repository contains the raw model data. For easy visualization of profiles, we are developing an interactive visualization tool (coming soon! Currently in development, contact us if needed).
+
+## Usage:
+We do not recommend cloning the full repository; single files can be queried if the file name is known (see file name structure below).
+If only a few specific models are used, please cite the repo. 
+If you wish to use the full dataset, please contact the authors: Marbely Micolta (micoltam[at]umich.edu) and Thanawuth Thanathibodee (thanawuth.t[at]chula.ac.th)
 
 ## Lines available
 
