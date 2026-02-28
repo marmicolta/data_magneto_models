@@ -15,16 +15,19 @@ If you wish to use the full dataset, please contact the authors: Marbely Micolta
 
 Hydrogen lines:
 
-'h23':r"Hα",
-'h24':r"Hβ", 
-'h25':r"Hγ",
-'h35':r"Paβ",
-'h36':r"Paγ",
-'h37':r"Paδ",
-'h47':r"Brγ",
-'ca15':r"Ca II K",
-'ca25':r"Ca II 8498",
-'ca35':r"Ca II 8542"
+'h23': Hα \
+'h24': Hβ \
+'h25': Hγ \
+'h35': Paβ \
+'h36': Paγ \
+'h37': Paδ \
+'h47': Brγ \
+
+Calcium lines:
+
+'ca15': Ca II K \
+'ca25': Ca II 8498 \
+'ca35': Ca II 8542
  
 ## Parameters
 
