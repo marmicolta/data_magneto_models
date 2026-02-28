@@ -4,11 +4,13 @@ Open library of Magnetospheric Accretion Models for T Tauri stars.
 Magnetospheric accretion model references: [Hartmann et al. (1994)](https://ui.adsabs.harvard.edu/abs/1994ApJ...426..669H/abstract) and [Muzerolle et al. (2001)](https://ui.adsabs.harvard.edu/abs/2001ApJ...550..944M/abstract)
 Calculated by [Thanawuth (Atom) Thanathibodee](https://www.frontier.phys.sc.chula.ac.th/thanawut-w) and [Marbely Micolta](https://sites.google.com/umich.edu/marbelymicolta?usp=sharing)
 
-This repository contains the raw model data. For easy visualization of profiles, we are developing an interactive visualization tool (coming soon! Currently in development, contact us if needed).
+This repository contains the raw model data. For easy visualization of line profiles, exploration of the parameter space, and comparison with observations, we developing an interactive visualization tool: AREPAS (link).
 
 ## Usage:
-We do not recommend cloning the full repository; single files can be queried if the file name is known (see file name structure below).
-If only a few specific models are used, please cite the repo. 
+We do not recommend cloning the full repository. Instead, we recommend using AREPAS, single files can be downloaded directly from the app. 
+
+Please cite this repo if you use the models in your research. 
+
 If you wish to use the full dataset, please contact the authors: Marbely Micolta (micoltam[at]umich.edu) and Thanawuth Thanathibodee (thanawuth.t[at]chula.ac.th)
 
 ## Lines available
