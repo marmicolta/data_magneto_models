@@ -15,21 +15,17 @@ If you wish to use the full dataset, please contact the authors: Marbely Micolta
 
 Hydrogen lines:
 
- Balmer series:   2-3 to 2-7\
- Paschen series:  3-4 to 3-16\
- Brackett series: 4-5 to 4-16
-
-Calcium II lines:
-
- CaII H: 1-4\
- CaII K: 1-5
-
- Infrared triplet lines(IRT):
+'h23':r"Hα",
+'h24':r"Hβ", 
+'h25':r"Hγ",
+'h35':r"Paβ",
+'h36':r"Paγ",
+'h37':r"Paδ",
+'h47':r"Brγ",
+'ca15':r"Ca II K",
+'ca25':r"Ca II 8498",
+'ca35':r"Ca II 8542"
  
- CaII 8498.02: 2-5\
- CaII 8542.09: 3-5\
- CaII 8662.14: 2-4
-
 ## Parameters
 
 The file models/magnetomodels-ids.csv lists the correspondences between an ID number and the Magnetospheric parameters. Model stellar parameters are described in model_stellar_parameters
@@ -41,13 +37,11 @@ The file models/magnetomodels-ids.csv lists the correspondences between an ID nu
 
 - Ca abundances: All calcium lines have solar abundance. Lines Ca:15,25,35 have a grid in abundances from 1 to 0.01 solar abundances. Detailed ID of each abundance in ca_abundance.csv
 
-Note about geometries: 
+Note:
 
- All the lines have the first 6 (basic) geometries. 
+Higher hydrogen transitions as well as Ca II K and Ca 2-4 are available for the first 6 (basic) geometries and only solar abundance in tar.gz files.
  
- Lines: Ca: 15,25,35 and H: 2-3,2-4,2-5,3-5,3-6,3-7,4-7 have a more detailed grid in geometries (36). The profiles of the extended geometry grid are available, ready to query. The remaining lines are available in tar.gz files.
- 
- The file line_geo_extension.csv lists the index of the maximum possible geometry for each line.
+The file line_geo_extension.csv lists the index of the maximum possible geometry for each line.
 
 
 ## File name structure:
