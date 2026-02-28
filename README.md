@@ -1,9 +1,6 @@
 # Database of Magnetospheric Accretion Models for T Tauri Stars
 Open library of Magnetospheric Accretion Models for T Tauri stars.
 
-Magnetospheric accretion model references: [Hartmann et al. (1994)](https://ui.adsabs.harvard.edu/abs/1994ApJ...426..669H/abstract) and [Muzerolle et al. (2001)](https://ui.adsabs.harvard.edu/abs/2001ApJ...550..944M/abstract)
-Calculated by [Thanawuth (Atom) Thanathibodee](https://www.frontier.phys.sc.chula.ac.th/thanawut-w) and [Marbely Micolta](https://sites.google.com/umich.edu/marbelymicolta?usp=sharing)
-
 This repository contains the raw model data. For easy visualization of line profiles, exploration of the parameter space, and comparison with observations, we developed an interactive visualization tool: AREPAS (link).
 
 ## Usage:
@@ -11,7 +8,7 @@ We do not recommend cloning the full repository. Instead, we recommend using ARE
 
 Please cite this repo if you use the models in your research. 
 
-If you wish to use the full dataset, please contact the authors: Marbely Micolta (micoltam[at]umich.edu) and Thanawuth Thanathibodee (thanawuth.t[at]chula.ac.th)
+If you wish to use the full dataset, please contact the authors: [Marbely Micolta](https://sites.google.com/umich.edu/marbelymicolta?usp=sharing) (micoltam[at]umich.edu) and [Thanawuth (Atom) Thanathibodee](https://www.frontier.phys.sc.chula.ac.th/thanawut-w) (thanawuth.t[at]chula.ac.th)
 
 ## Lines available
 
@@ -70,7 +67,12 @@ Each file contains:
 Line profiles are in flux per unit frequency (erg/s/cm^2/Hz) and velocity (km/s). 
 Calculated at the surface of each star (see Stellar Parameter table), i.e., to convert to luminosity (per unit frequency) multiply by 4πR<sub>*,mod</sub>^2
 
-## Related papers:
+## References:
+
+Magnetospheric accretion model references: [Hartmann et al. (1994)](https://ui.adsabs.harvard.edu/abs/1994ApJ...426..669H/abstract) and [Muzerolle et al. (2001)](https://ui.adsabs.harvard.edu/abs/2001ApJ...550..944M/abstract)
+
+Related papers:
+
 - [Micolta et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024ApJ...976..251M/abstract)
 - [Micolta et al. (2023)](https://ui.adsabs.harvard.edu/abs/2023ApJ...953..177M/abstract)
 - [Thanathibodee et al. (2023)](https://ui.adsabs.harvard.edu/abs/2023ApJ...944...90T/abstract)
