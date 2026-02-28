@@ -21,7 +21,7 @@ Hydrogen lines:
 'h35': Paβ \
 'h36': Paγ \
 'h37': Paδ \
-'h47': Brγ \
+'h47': Brγ
 
 Calcium lines:
 
