@@ -42,7 +42,7 @@ The file models/magnetomodels-ids.csv lists the correspondences between an ID nu
 
 Note:
 
-Higher hydrogen transitions as well as Ca II K and Ca 2-4 are available for the first 6 (basic) geometries and only solar abundance in tar.gz files.
+Higher hydrogen transitions as well as Ca II transitions: 1-4 (Ca II H) and 2-4 are available for the first 6 (basic) geometries and only solar abundance in tar.gz files.
  
 The file line_geo_extension.csv lists the index of the maximum possible geometry for each line.
 
