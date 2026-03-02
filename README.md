@@ -1,5 +1,5 @@
 # Database of Magnetospheric Accretion Models for T Tauri Stars
-Open library of Magnetospheric Accretion Models for T Tauri stars.
+Open Library of Magnetospheric Accretion Models for T Tauri stars.
 
 This repository contains the raw model data. For easy visualization of line profiles, exploration of the parameter space, and comparison with observations, we developed an interactive visualization tool: AREPAS (link).
 
