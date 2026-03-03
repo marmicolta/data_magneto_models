@@ -4,10 +4,10 @@ Data Release I:
 
 <a href="https://doi.org/10.5281/zenodo.18852909"><img src="https://zenodo.org/badge/1144882498.svg" alt="DOI"></a>
 
-This repository contains the raw model data. For easy visualization of line profiles, exploration of the parameter space, and comparison with observations, we developed an interactive visualization tool: AREPAS (link).
+This repository contains the raw model data. For easy visualization of line profiles, exploration of the parameter space, and comparison with observations, we developed an interactive visualization tool: [AREPAS](https://arepas.streamlit.app/) [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://arepas.streamlit.app/).
 
 ## Usage:
-We do not recommend cloning the full repository. Instead, we recommend using AREPAS, single files can be downloaded directly from the app. 
+We do not recommend cloning the full repository. Instead, we recommend using [AREPAS](https://arepas.streamlit.app/). This apps allows you to explore the full dataset and comapre to your input observations, files can be downloaded directly from the app [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://arepas.streamlit.app/). 
 
 Please cite this repo if you use the models in your research. 
 
