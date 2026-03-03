@@ -37,7 +37,7 @@ The file models/magnetomodels-ids.csv lists the correspondences between an ID nu
 - Tmax: the maximum temperature of the flow (Kelvin), this is of the form TXX, where X is between 01-16,
 - Inclination: the inclination of the magnetosphere in degrees, this is of the form IXX, where X is any of [15, 30, 45, 60, 75].
 
-- Ca abundances: All calcium lines have solar abundance. Lines Ca:15,25,35 have a grid in abundances from 1 to 0.01 solar abundances. Detailed ID of each abundance in ca_abundance.csv
+- Ca abundances: Lines Ca:15,25,35 have a grid in abundances from 1 to 0.01 solar abundances. Detailed ID of each abundance in ca_abundance.csv
 
 Note:
 
@@ -63,9 +63,10 @@ Each file name is as such:
     An example file name is <code>prof.ca15.Ca_0p5.G01.M01.T03.I45.0</code>, which would correspond to the Ca II K line with an abundance of 0.5 (50% Solar), geometry of R<sub>in</sub>=2, width=0.5, an accretion rate of -7, max temperature of 9500K, and an inclination of 45 degrees.
 
 ## Units:
-Each file contains:
-Line profiles are in flux per unit frequency (erg/s/cm^2/Hz) and velocity (km/s). 
-Calculated at the surface of each star (see Stellar Parameter table), i.e., to convert to luminosity (per unit frequency) multiply by 4πR<sub>*,mod</sub>^2
+Each file contains: 
+- Line profiles in flux per unit frequency (erg/s/cm^2/Hz)
+- Velocity (km/s). 
+Fluxes are calculated at the surface of each star (see Stellar Parameter table), i.e., to convert to luminosity (per unit frequency) multiply by 4πR<sub>*,mod</sub>^2
 
 ## References:
 
