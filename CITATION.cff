@@ -2,6 +2,8 @@ cff-version: 1.2.0
 title: "Database of magnetospheric accretion models for T Tauri stars"
 message: "If you use this dataset, please cite it."
 type: dataset
+version: 1.0.0
+date-released: 2026-03-01
 
 authors:
 
@@ -16,8 +18,7 @@ authors:
     orcid: https://orcid.org/0000-0003-4507-1710
 
 license: CC-BY-4.0
-
-repository-code: https://github.com/marmicolta/data_magneto_models
+repository-code: https://github.com/marmicolta/database_magneto_models
 
 keywords:
   - magnetospheric accretion
