@@ -9,7 +9,7 @@ This repository contains the raw model data. For easy visualization of line prof
 ## Usage:
 We do not recommend cloning the full repository. Instead, we recommend using [AREPAS](https://arepas.streamlit.app/). This apps allows you to explore the full dataset and comapre to your input observations, files can be downloaded directly from the app [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://arepas.streamlit.app/). 
 
-Please cite this repo if you use the models in your research. 
+If you use the models and/or the AREPAS app in your research, please cite the [data release I paper](https://iopscience.iop.org/article/10.3847/2515-5172/ae5241).
 
 If you wish to use the full dataset, please contact the authors: [Marbely Micolta](https://sites.google.com/umich.edu/marbelymicolta?usp=sharing) (micoltam[at]umich.edu) and [Thanawuth (Atom) Thanathibodee](https://www.frontier.phys.sc.chula.ac.th/thanawut-w) (thanawuth.t[at]chula.ac.th)
 
